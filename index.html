@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.M.I Calculator</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER (PAGE TITLE) -->
+    <header>
+       Body Mass Index (BMI) Calculator. 
+    </header>
+
+    <div class="main-container">
+
+        <!-- BMI INFORMATION & INSTRUCTION-->
+        <div class="left-content">
+           <span> What is body mass index (BMI)?</span>
+
+            <p class="first-p">
+                Body mass index (BMI) is a medical screening tool that measures the ratio of your height to your
+                weight to estimate the amount of body fat you have. Healthcare providers calculate BMI by using
+                weight in kilograms (kg) divided by the square of height in meters (m2).  Although BMI is not perfect
+                because it does not directly assess body fat, it is still considered a reasonable alternative for
+                identifying people who are overweight or obese, since measuring body fat directly is a costly process. 
+            </p>
+
+            <P class="second-p">
+                Now that you understand what BMI means, how about we help you calculate your BMI for <span>FREE!</span>  
+            </P>
+
+            <p class="third-p">
+                This BMI calculator will give your estimated number. Enter your age, height and weight, then
+                click the <u>"Calculate"</u>  button. If your BMI is above 25, losing weight is a smart idea. 
+            </p>
+        </div>
+
+        <!-- BMI CALCULATOR CONTAINER -->
+        <div class="right-content">
+            <div class="calc-header">
+                Calculate your BMI <span>HERE.</span>
+            </div>
+
+            <!-- CALCULATOR -->
+            <form >
+                <div class="input-card">
+                <label for="Age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age (2-120)" min="2" max="120 "/> <br/>
+
+                <label for="Height">Height:</label>
+                <input type="number" id="height" step="any" placeholder="Enter your height in metres(m)"/> <br/>
+
+                <label for="Weight">Weight:</label>
+                <input type="number" id="weight" step="any" placeholder="Enter your weight in kilograms(kg)"/> <br/>
+
+                <div class="btn">
+                <button id="calculate" onclick="checkRate()" type="button"> Calculate </button>
+                </div>
+               
+                </div>
+            </form>
+            
+            <!-- SHOWS THE BMI RESULT -->
+            <p id="show-result"> </p>
+            
+        </div>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
