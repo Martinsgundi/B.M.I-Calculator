@@ -22,6 +22,10 @@ header {
     color: rgb(207, 15, 15);
 }
 
+.main-container {
+    margin-bottom: 70px;
+}
+
 .main-container > div {
     display: inline-block;
 }
@@ -160,6 +164,100 @@ header {
     font-size: 27px;
 }
 
+footer{
+    background-color: rgb(88, 11, 11);
+}
+
+i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.footer-links, .copyright {
+    margin: 0 auto;
+    width: 470px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-underline-offset: .25rem;
+}
+
+.social-media-icons {
+    margin: 0 auto;
+    width: 470px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-media-icons > a {
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #aa2a81;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-linkedin:hover {
+    color: #0072B1;
+}
+
+.fa-envelope:hover {
+    color: #34a853;
+}
+
+.fa-tiktok:hover {
+    color: #000000;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 21px;
+    font-family: Nunito,Arial,sans-serif;
+    color: #ffffff;
+    outline: 0;
+    transition: color .15s ease-out;
+}
+
+.footer-links > a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.copyright {
+    color: hsla(0,0%,100%,.75);
+    font-family: Nunito,Arial,sans-serif;
+    font-size: 0.94rem;
+}
+
+.copyright > span {
+    color: #fff;
+    font-size: 0.99rem;
+    font-family: Nunito,Arial,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,19 +266,31 @@ header {
 /* Desktop Utility Class */
 .container {
     max-width: 1536px;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 0.5rem; */
 }
 
 @media (max-width:475px) {
     .container {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     header {
         font-size: 40px;
+    }
+
+    .main-container {
+        margin-bottom: 100px;
+    }
+
+    .left-content {
+        width: 100%;
     }
 
     .left-content > span {
@@ -191,6 +301,10 @@ header {
         font-size: 18px;
     }
 
+    .right-content {
+        width: 100%;
+    }
+
     .right-content > form > .input-card {
         margin: 0 auto;
     }
@@ -199,4 +313,12 @@ header {
        text-align: center;
     }
 
+    .footer-links > a {
+        font-size: 17.5px;
+    }
+    
+    .social-media-icons, .footer-links, .copyright {
+        padding-bottom: 20px;
+        width: 100%;
+    }   
 }
