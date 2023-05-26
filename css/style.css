@@ -335,6 +335,10 @@ i {
         margin-right: 15px;
     }
     
+    .social-media-icons {
+        padding-left: 25px;
+    }
+
     .social-media-icons, .footer-links, .copyright {
         padding-bottom: 20px;
         width: 100%;
