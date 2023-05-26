@@ -191,7 +191,7 @@ i {
 
 .social-media-icons > a {
     text-decoration: none;
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .fa-facebook-f:hover {
@@ -214,8 +214,8 @@ i {
     color: #34a853;
 }
 
-.fa-tiktok:hover {
-    color: #000000;
+.fa-github:hover {
+    color: #171515;
 }
 
 .footer-links > a {
