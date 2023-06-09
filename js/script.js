@@ -9,7 +9,7 @@ const checkRate = ()=> {
     const calcBmi = (weight / height**2);
    
 
-    // This statements shows the BMI result and checks the value of the results, to categorize them accordingly.
+    // These statements shows the BMI result and checks the value of the results, to categorize them accordingly.
     if (calcBmi < 18.5) {
         displayResult.innerHTML = `
         Your BMI rate is <b>${calcBmi.toFixed(1)} kg/m<sup>2</sup></b>. </br> 
