@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-size: 20px;
     color: #ffffff;
     background-image: url('/Images/B-Image.jpg');
@@ -36,19 +36,20 @@ header {
     padding-left: 50px;
 }
 
-.left-content > span {
-    font-size: 40px;
+.L-content > span {
+    font-size: 43px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.left-content > p {
-    line-height: 30px;
+.L-content > p {
+    line-height: 33px;
     word-spacing: 3px;
     letter-spacing: 0.3px;
+    font-size: 21px;
 }
 
-.left-content > .second-p > span {
+.L-content > .second-p > span {
     font-weight: 600;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -66,6 +67,7 @@ header {
 
 .calc-header {
     text-align: center;
+    width: 400px;
     font-size: 25px;
     font-weight: 300;
     padding: 20px 0 15px;
@@ -79,22 +81,23 @@ header {
     color:rgb(207, 15, 15)
 }
 
-.right-content > form > .input-card {
+.calc-container > form > .input-card {
     border: 1px solid  #ddd;
     width: 400px;
     background-color: #ffff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
     color: black;
+    padding-top: 10px;
 }
 
-.right-content > form  > .input-card > label {
+.calc-container > form  > .input-card > label {
     font-size: 23px;
     font-weight: 600;
     padding: 10px 10px 10px 14px;
 }
 
-.right-content > form  > .input-card > input {
+.calc-container > form  > .input-card > input {
     width: 250px;
     text-align: center;
     font-weight: 200;
@@ -103,21 +106,25 @@ header {
     outline: none;
     color: #1d2129;
     font-size: 15px;
-    margin: 7px 0;
+    margin: 10px 0;
     padding: 10px 0;
 }
 
-.right-content > form  > .input-card > input:focus {
+.age {
+    margin-right: 28px;
+}
+
+.calc-container > form  > .input-card > input:focus {
     border-color: rgb(153, 17, 17);
     box-shadow: 0 0 0 2px #e7f3ff;
     caret-color: rgb(153, 17, 17);
 }
 
-.right-content >  form  > .input-card > input::placeholder {
+.calc-container >  form  > .input-card > input::placeholder {
     color: #1d2129e8;
 }
 
-.right-content > form  > .input-card > .btn > button {
+.calc-container > form  > .input-card > .btn > button {
     text-align: center;
     width: 150px;
     color: #ffffff;
@@ -132,7 +139,7 @@ header {
     cursor: pointer;
 }
 
-.right-content > form  > .input-card > .btn > button:hover{
+.calc-container > form  > .input-card > .btn > button:hover{
     background-color: rgba(155, 14, 14, 0.959);
 }
 
@@ -143,7 +150,7 @@ header {
     padding: 15px 0 25px;
 }
 
-.right-content > p {
+.calc-container > p {
     line-height: 35px;
     letter-spacing: 0.6px;
     font-size: 22px;
@@ -152,7 +159,7 @@ header {
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-.right-content > p > span {
+.calc-container > p > span {
     color: rgb(207, 15, 15);
     background-color: white;
     font-weight: 600;
@@ -161,7 +168,7 @@ header {
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-.right-content > p > b {
+.calc-container > p > b {
     font-size: 27px;
 }
 
@@ -255,35 +262,149 @@ i {
 
 
 
-
-
-
-
-
-
 /* Responsive Design */
 
-/* Desktop Utility Class */
-.container {
-    max-width: 1536px;
-    /* margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; */
-}
 
-@media (max-width:475px) {
+/* extra-large screen (medium sized laptops) */
+@media (max-width: 1284px) {
     .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        max-width: 100%;
     }
 
     header {
-        font-size: 40px; 
-        text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        text-align: center;
+        padding: 0 10px;
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .left-content {
+        margin-left: 0;
+        padding: 80px 30px 0;
+        width: 100%;
+    }
+
+    .L-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .L-content > span {
+        line-height: 60px;
+    }
+    
+    .L-content > p {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .right-content {
+        margin-bottom: 80px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .calc-container {
+        max-width: 805px;
+        margin: 0 auto;
+    }
+
+    .calc-container > form, p {
+        display: inline-block; 
+    }
+
+    #show-result {
+        margin-left: 0;
+        vertical-align: bottom;
+        margin-bottom: 90px; 
+        font-size: 26px;
+        text-align: center;
+        max-width: 388px;
+        padding-left: 30px;
+    }
+}
+
+/* large screen (large tablets & mini-laptops) */
+@media (max-width: 1050px) {
+    
+    .L-content {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .L-content > p {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .right-content {
+     padding-left: 27px; 
+    }
+
+    .calc-container {
+        max-width: 100%;
+    }
+
+    #show-result {
+        max-width: 450px;
+    }
+}
+
+/* +medium screen (plus size tablet) */
+@media (max-width: 899px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    header {
+       text-align: center;
+        padding: 0 10px;
+        font-size: 57px;
+    }
+
+    .left-content {
+        padding: 60px 30px 0;
+        width: 100%;
+    }
+
+    .right-content {
+        margin-bottom: 50px;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .right-content > form > .input-card {
+       padding: 10px 10px 0;
+    }
+
+    .calc-container {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    #show-result {
+        margin-top: 30px;
+    }
+} 
+
+/* medium screen (tablet "max-width: 768px")
+   inherit the responsiveness of greater "max-widths" 
+*/
+
+/*  small screen (phone) */
+@media (max-width: 640px) {
+    .L-content > span {
+        line-height: 50px;
+    }
+}
+
+/* extra-samll screen (phone) */
+@media (max-width:475px) {
+
+    header {
+        font-size: 40px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
     .main-container {
@@ -292,37 +413,27 @@ i {
 
     .left-content {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 60px;
+        padding: 60px 20px 0;
     }
 
-    .left-content > span {
+    .L-content > span {
         font-size: 30px;
+        line-height: 40px;
     }
 
-    .left-content > p {
+    .L-content > p {
         font-size: 18px;
     }
 
-    .right-content {
-        width: 100%;
+    .calc-container > form  > .input-card > input {
+        max-width: 237px;
     }
 
-    .right-content > form > .input-card {
-        margin: 0 auto;
-        width: 370px;
-    }
-
-    .right-content > form  > .input-card > input {
-        width: 237px;
-    }
-
-    .right-content > .calc-header > span {
+    .calc-container > .calc-header > span {
         text-align: center;
     }
 
-    .right-content > p {
+    .calc-container > p {
        text-align: center;
     }
 
@@ -343,4 +454,29 @@ i {
         padding-bottom: 20px;
         width: 100%;
     }   
+}
+
+/* extra-samll screen (phone) */
+@media (max-width:430px) {
+
+    .right-content {
+        max-width: 100%;
+    }
+
+    .calc-header {
+        max-width: inherit;
+    }
+
+    .calc-container {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .calc-container > form  > .input-card > input {
+        max-width: 200px;
+    } 
+
+    .calc-container > form  > .input-card {
+        max-width: 350px;
+    }
 }
